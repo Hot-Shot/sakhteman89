@@ -33,6 +33,5 @@ public class Spawner : MonoBehaviour {
 				Instantiate (enemy2, whereToSpawn, Quaternion.identity);
 			}
 		}
-		
 	}
 }
