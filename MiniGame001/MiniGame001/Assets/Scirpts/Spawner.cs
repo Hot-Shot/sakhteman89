@@ -18,7 +18,7 @@ public class Spawner : MonoBehaviour {
 		if (i % 2 == 0) {
 			if (Time.time > nextSpawn) {
 				nextSpawn = Time.time + spawnRate;
-				randX = Random.Range (0f, 0f);
+				randX = Random.Range (-5f, 5f);
 				whereToSpawn = new Vector2 (randX, transform.position.y);
 				Instantiate (enemy, whereToSpawn, Quaternion.identity);
 				
@@ -28,7 +28,7 @@ public class Spawner : MonoBehaviour {
 		{  
 			if (Time.time > nextSpawn) {
 				nextSpawn = Time.time + spawnRate;
-				randX = Random.Range (1.7f, 1.7f);
+				randX = Random.Range (-0f, 5f);
 				whereToSpawn = new Vector2 (randX, transform.position.y);
 				Instantiate (enemy2, whereToSpawn, Quaternion.identity);
 			}
