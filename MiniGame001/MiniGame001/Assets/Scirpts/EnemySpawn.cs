@@ -16,11 +16,12 @@ using System.Collections;
 		void Update () {
 			if(Time.time > nextspawn)
 			{
-			nextspawn=Time.time + spawnrate;
-			randEnemy = Random.Range (0, 2);
-			whereToSpawn = new Vector2 (posX, transform.position.y);
-			Instantiate (enemies[randEnemy], whereToSpawn , gameObject.transform.rotation);		
+				nextspawn=Time.time + spawnrate;
+				randEnemy = Random.Range (0, 6);
+				whereToSpawn = new Vector2 (posX, transform.position.y);
+				Instantiate (enemies[randEnemy], whereToSpawn , gameObject.transform.rotation);		
 			}
+
 		}
 			
 	}
