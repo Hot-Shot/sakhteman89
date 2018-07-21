@@ -96,6 +96,7 @@ GameObject:
   - 212: {fileID: 136920716}
   - 61: {fileID: 136920719}
   - 114: {fileID: 136920718}
+  - 50: {fileID: 136920720}
   m_Layer: 0
   m_Name: EnemyAtBalcony2
   m_TagString: Untagged
@@ -166,6 +167,22 @@ BoxCollider2D:
   m_Offset: {x: -2.34571528, y: -1.29078174}
   serializedVersion: 2
   m_Size: {x: 4.77169371, y: 5.27558327}
+--- !u!50 &136920720
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136920715}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &159568136
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,7 +427,7 @@ GameObject:
   - 4: {fileID: 396555454}
   - 212: {fileID: 396555453}
   m_Layer: 0
-  m_Name: building 01
+  m_Name: StartofTheBuilding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -719,6 +736,7 @@ GameObject:
   - 212: {fileID: 957074650}
   - 61: {fileID: 957074653}
   - 114: {fileID: 957074652}
+  - 50: {fileID: 957074654}
   m_Layer: 0
   m_Name: WindowWithEnemy2
   m_TagString: Untagged
@@ -789,6 +807,22 @@ BoxCollider2D:
   m_Offset: {x: 1.05808091, y: -1.02959764}
   serializedVersion: 2
   m_Size: {x: 1.94141185, y: 3.21200585}
+--- !u!50 &957074654
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 957074649}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1004437912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,8 +1076,6 @@ GameObject:
   - 223: {fileID: 1129506528}
   - 114: {fileID: 1129506527}
   - 114: {fileID: 1129506526}
-  - 114: {fileID: 1129506530}
-  - 114: {fileID: 1129506531}
   - 114: {fileID: 1129506532}
   m_Layer: 5
   m_Name: Canvas
@@ -1126,28 +1158,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1129506530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1129506525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c5d482b9f64bd741969960e6b1ea7b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1129506531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1129506525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c5d482b9f64bd741969960e6b1ea7b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1129506532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1171,6 +1181,7 @@ GameObject:
   - 212: {fileID: 1140456017}
   - 61: {fileID: 1140456020}
   - 114: {fileID: 1140456019}
+  - 50: {fileID: 1140456021}
   m_Layer: 0
   m_Name: WindowWithEnemy
   m_TagString: Untagged
@@ -1241,6 +1252,22 @@ BoxCollider2D:
   m_Offset: {x: 1.06079268, y: -1.25119829}
   serializedVersion: 2
   m_Size: {x: 1.92681396, y: 2.79575968}
+--- !u!50 &1140456021
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1140456016}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1144530621
 GameObject:
   m_ObjectHideFlags: 0
