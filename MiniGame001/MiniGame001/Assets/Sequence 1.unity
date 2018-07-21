@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 136920717}
   - 212: {fileID: 136920716}
+  - 61: {fileID: 136920718}
   m_Layer: 0
   m_Name: EnemyAtBalcony2
   m_TagString: Untagged
@@ -139,6 +140,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
+--- !u!61 &136920718
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136920715}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -2.40262079, y: -1.37208891}
+  serializedVersion: 2
+  m_Size: {x: 4.91512012, y: 5.63582087}
 --- !u!1 &232780534
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,8 +524,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 461084640}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0199999996, y: 3.41000009, z: 10}
-  m_LocalScale: {x: 6.0438776, y: 15.782443, z: 1}
+  m_LocalPosition: {x: -0, y: 2.42000008, z: 10}
+  m_LocalScale: {x: 6.00255299, y: 17.7660332, z: 1}
   m_Children:
   - {fileID: 1516289859}
   m_Father: {fileID: 1177697493}
@@ -669,9 +683,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 957074651}
   - 212: {fileID: 957074650}
+  - 114: {fileID: 957074654}
+  - 61: {fileID: 957074653}
+  - 50: {fileID: 957074652}
   m_Layer: 0
   m_Name: WindowWithEnemy2
-  m_TagString: Untagged
+  m_TagString: Enemy2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -714,6 +731,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
+--- !u!50 &957074652
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 957074649}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &957074653
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 957074649}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 1.06444979, y: -.995438635}
+  serializedVersion: 2
+  m_Size: {x: 2.07283854, y: 3.3834331}
+--- !u!114 &957074654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 957074649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ae1caa7616439409db680291f7d787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scores: {fileID: 232780536}
 --- !u!1 &1004437912
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,6 +853,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1050268738}
   - 212: {fileID: 1050268737}
+  - 61: {fileID: 1050268740}
+  - 50: {fileID: 1050268739}
   m_Layer: 0
   m_Name: EnemyAtBalcony
   m_TagString: Untagged
@@ -840,6 +900,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!50 &1050268739
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1050268736}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &1050268740
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1050268736}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -2.25055933, y: -1.21066761}
+  serializedVersion: 2
+  m_Size: {x: 5.21925306, y: 5.95866537}
 --- !u!1 &1092268516
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,6 +1015,7 @@ GameObject:
   - 114: {fileID: 1129506530}
   - 114: {fileID: 1129506531}
   - 114: {fileID: 1129506532}
+  - 114: {fileID: 1129506533}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1041,6 +1131,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenuUI: {fileID: 1719192094}
+--- !u!114 &1129506533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1129506525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ae1caa7616439409db680291f7d787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scores: {fileID: 0}
 --- !u!1 &1140456016
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,9 +1152,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 1140456018}
   - 212: {fileID: 1140456017}
+  - 114: {fileID: 1140456021}
+  - 61: {fileID: 1140456020}
+  - 50: {fileID: 1140456019}
   m_Layer: 0
   m_Name: WindowWithEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1095,6 +1200,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
+--- !u!50 &1140456019
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1140456016}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &1140456020
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1140456016}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 1.18610132, y: -1.45280182}
+  serializedVersion: 2
+  m_Size: {x: 2.43779254, y: 3.1143961}
+--- !u!114 &1140456021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1140456016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ae1caa7616439409db680291f7d787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scores: {fileID: 232780536}
 --- !u!1 &1144530621
 GameObject:
   m_ObjectHideFlags: 0
