@@ -13,11 +13,6 @@ public class EnemySpawner3 : MonoBehaviour {
 	public float dlytime=0.0f;
 	int randEnemy;
 	// Use this for initialization
-	public void awake(){
-		if (PauseMenu.GameIsPaused == true) {
-			dlytime+=1f;
-		}
-	}
 	void Start () {
 	}
 	
