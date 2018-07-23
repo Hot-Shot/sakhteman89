@@ -271,6 +271,8 @@ MonoBehaviour:
   myTimer: 0
   spawnrate: 4.5
   posX: 1.70000005
+  a: 0
+  i: .400000006
 --- !u!1 &331680944
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +427,8 @@ MonoBehaviour:
   myTimer: 0
   spawnrate: 5
   posX: -1.70000005
+  a: 0
+  i: .400000006
 --- !u!1 &425073413
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,6 +744,8 @@ MonoBehaviour:
   myTimer: 0
   spawnrate: 5
   posX: -1.70000005
+  a: 0
+  i: .400000006
 --- !u!1 &767748247
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,6 +1699,8 @@ MonoBehaviour:
   myTimer: 0
   spawnrate: 4.5
   posX: 0
+  a: 0
+  i: .400000006
 --- !u!1 &1376938015
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,6 +1846,8 @@ MonoBehaviour:
   myTimer: 0
   spawnrate: 5
   posX: 1.70000005
+  a: 0
+  i: .400000006
 --- !u!1 &1455142744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1884,6 +1894,8 @@ MonoBehaviour:
   myTimer: 0
   spawnrate: 5
   posX: 0
+  a: 0
+  i: .400000006
 --- !u!1 &1476402851
 GameObject:
   m_ObjectHideFlags: 0
@@ -2064,6 +2076,8 @@ MonoBehaviour:
   myTimer: 0
   spawnrate: 5
   posX: 1.70000005
+  a: 0
+  i: .400000006
 --- !u!1 &1719192094
 GameObject:
   m_ObjectHideFlags: 0
@@ -2329,6 +2343,8 @@ MonoBehaviour:
   myTimer: 0
   spawnrate: 5
   posX: 0
+  a: 0
+  i: .400000006
 --- !u!1 &2019741203
 GameObject:
   m_ObjectHideFlags: 0
@@ -2429,6 +2445,8 @@ MonoBehaviour:
   myTimer: 0
   spawnrate: 4.5
   posX: -1.70000005
+  a: 0
+  i: .400000006
 --- !u!1 &2114737402
 GameObject:
   m_ObjectHideFlags: 0
