@@ -10,12 +10,16 @@ public class EnemySpawner2 : MonoBehaviour {
 	float nextspawn = 0.0f;
 	public int a=0;
 	public float i=0.4f;
+	public float dlytime=0.0f;
 	int randEnemy;
 	// Use this for initialization
-	void Start () {
+	public void awake(){
 		if (PauseMenu.GameIsPaused == true) {
-			i+=0.2f;
+			dlytime+=1f;
 		}
+	}
+	void Start () {
+
 	}
 	
 	// Update is called once per frame
@@ -27,6 +31,7 @@ public class EnemySpawner2 : MonoBehaviour {
 				a += 1;
 				spawnrate -= 1.5f;
 				myTimer = 0;
+				dlytime+=0.1f;
 			}
 			if (spawnrate <= 1) {
 				spawnrate += i;
@@ -41,7 +46,8 @@ public class EnemySpawner2 : MonoBehaviour {
 			}
 		
 			if (Time.time > nextspawn) {
-				nextspawn = Time.time + spawnrate - i;
+				dlytime=0f;
+				nextspawn = Time.time + spawnrate - i + dlytime;
 				randEnemy = Random.Range (0, 3);
 				whereToSpawn = new Vector2 (posX, transform.position.y);
 				Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);		

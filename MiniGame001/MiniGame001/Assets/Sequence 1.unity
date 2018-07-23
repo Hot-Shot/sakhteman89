@@ -568,6 +568,7 @@ MonoBehaviour:
   posX: 1.70000005
   a: 0
   i: .400000006
+  dlytime: 0
 --- !u!1 &331680944
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,6 +725,7 @@ MonoBehaviour:
   posX: -1.70000005
   a: 0
   i: .400000006
+  dlytime: 0
 --- !u!1 &461084640
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,6 +861,7 @@ MonoBehaviour:
   posX: -1.70000005
   a: 0
   i: .400000006
+  dlytime: 0
 --- !u!1 &775917132
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,9 +1343,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 794c7f66bd6948e4ea6dfe75f7401c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawner01: {fileID: 328941067}
-  spawner08: {fileID: 1338651976}
-  spawner09: {fileID: 2103971684}
   PauseMenuUI: {fileID: 1546861145}
 --- !u!114 &1129506533
 MonoBehaviour:
@@ -1684,6 +1684,7 @@ MonoBehaviour:
   posX: 0
   a: 0
   i: .400000006
+  dlytime: 1
 --- !u!1 &1376938015
 GameObject:
   m_ObjectHideFlags: 0
@@ -1831,6 +1832,7 @@ MonoBehaviour:
   posX: 1.70000005
   a: 0
   i: .400000006
+  dlytime: 0
 --- !u!1 &1455142744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,6 +1881,7 @@ MonoBehaviour:
   posX: 0
   a: 0
   i: .400000006
+  dlytime: 1
 --- !u!1 &1476402851
 GameObject:
   m_ObjectHideFlags: 0
@@ -2130,6 +2133,7 @@ MonoBehaviour:
   posX: 1.70000005
   a: 0
   i: .400000006
+  dlytime: 0
 --- !u!1 &1769925388
 GameObject:
   m_ObjectHideFlags: 0
@@ -2217,6 +2221,7 @@ MonoBehaviour:
   posX: 0
   a: 0
   i: .400000006
+  dlytime: 1
 --- !u!1 &2019741203
 GameObject:
   m_ObjectHideFlags: 0
@@ -2319,6 +2324,7 @@ MonoBehaviour:
   posX: -1.70000005
   a: 0
   i: .400000006
+  dlytime: 0
 --- !u!1 &2114737402
 GameObject:
   m_ObjectHideFlags: 0

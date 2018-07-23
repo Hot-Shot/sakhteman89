@@ -10,9 +10,16 @@ public class EnemySpawn : MonoBehaviour {
 	float nextspawn = 0.0f;
 	public int a=0;
 	public float i=0.4f;
+	public float dlytime=0.0f;
 	int randEnemy;
 	// Use this for initialization
+	public void awake(){
+		if (PauseMenu.GameIsPaused == true) {
+			dlytime+=1f;
+		}
+	}
 	void Start () {
+
 	}
 	
 	// Update is called once per frame
@@ -42,6 +49,7 @@ public class EnemySpawn : MonoBehaviour {
 				randEnemy = Random.Range (0, 3);
 				whereToSpawn = new Vector2 (posX, transform.position.y);
 				Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);		
+				dlytime=0f;
 				
 			}
 		}
