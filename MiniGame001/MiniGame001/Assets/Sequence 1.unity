@@ -1483,8 +1483,8 @@ GameObject:
   - 92: {fileID: 1177697491}
   - 124: {fileID: 1177697490}
   - 81: {fileID: 1177697489}
-  - 114: {fileID: 1177697494}
   - 82: {fileID: 1177697495}
+  - 114: {fileID: 1177697496}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1570,19 +1570,6 @@ Transform:
   - {fileID: 412179032}
   m_Father: {fileID: 0}
   m_RootOrder: 3
---- !u!114 &1177697494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1177697488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b463e56a3245b714aab35d803c2de035, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myTimer: 0
-  i: .00999999978
 --- !u!82 &1177697495
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1653,6 +1640,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &1177697496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1177697488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 893e1a3379655bc4e9ef27ed731d71a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTimer: 0
+  i: .00999999978
 --- !u!1 &1338651976
 GameObject:
   m_ObjectHideFlags: 0
