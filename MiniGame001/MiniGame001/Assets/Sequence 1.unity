@@ -1340,6 +1340,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 794c7f66bd6948e4ea6dfe75f7401c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner01: {fileID: 328941067}
+  spawner08: {fileID: 1338651976}
+  spawner09: {fileID: 2103971684}
   PauseMenuUI: {fileID: 1546861145}
 --- !u!114 &1129506533
 MonoBehaviour:
