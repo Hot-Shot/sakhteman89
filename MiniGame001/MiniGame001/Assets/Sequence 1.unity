@@ -268,7 +268,8 @@ MonoBehaviour:
   - {fileID: 2019741203}
   - {fileID: 957074649}
   - {fileID: 1140456016}
-  spawnrate: 2
+  myTimer: 0
+  spawnrate: 4.5
   posX: 1.70000005
 --- !u!1 &331680944
 GameObject:
@@ -861,7 +862,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 957074649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.6800003, y: .959999979, z: 0}
+  m_LocalPosition: {x: 10.8999996, y: .959999979, z: 0}
   m_LocalScale: {x: .230000004, y: .25999999, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1711,7 +1712,7 @@ MonoBehaviour:
   - {fileID: 2019741203}
   - {fileID: 957074649}
   - {fileID: 1140456016}
-  spawnrate: 2
+  spawnrate: 4
   posX: 0
 --- !u!1 &1376938015
 GameObject:
@@ -1855,6 +1856,7 @@ MonoBehaviour:
   - {fileID: 2019741203}
   - {fileID: 957074649}
   - {fileID: 1140456016}
+  myTimer: 0
   spawnrate: 5
   posX: 1.70000005
 --- !u!1 &1455142744
@@ -2079,6 +2081,7 @@ MonoBehaviour:
   - {fileID: 2019741203}
   - {fileID: 957074649}
   - {fileID: 1140456016}
+  myTimer: 0
   spawnrate: 5
   posX: 1.70000005
 --- !u!1 &1719192094
@@ -2442,7 +2445,7 @@ MonoBehaviour:
   - {fileID: 2019741203}
   - {fileID: 957074649}
   - {fileID: 1140456016}
-  spawnrate: 2
+  spawnrate: 4
   posX: -1.70000005
 --- !u!1 &2114737402
 GameObject:
