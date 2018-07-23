@@ -18,14 +18,17 @@ using System.Collections;
 		// Update is called once per frame
 		void Update () {
 			myTimer= myTimer + Time.deltaTime;
-			if(myTimer>=9.9)
+			if(myTimer>=10)
 			{
-				spawnrate = spawnrate - 1.4f;
+				spawnrate -= 1.5f;
 			}
-			if(myTimer>9.9)
+			if(myTimer>10)
 			{
 				myTimer=0;
 			}	
+			if (spawnrate <= 1) {
+				spawnrate += 1.5f;
+			}
 			if(Time.time > nextspawn)
 			{
 				nextspawn=Time.time + spawnrate;

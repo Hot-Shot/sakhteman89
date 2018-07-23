@@ -4,16 +4,30 @@ using System.Collections;
 public class EnemySpawner3 : MonoBehaviour {
 	public GameObject[] enemies;
 	Vector2 whereToSpawn;
-	public float spawnrate = 5f;
+	public float myTimer;
+	public float spawnrate = 4f;
 	public float posX = -1.7f;
 	float nextspawn = 0.0f;
 	int randEnemy;
 	// Use this for initialization
 	void Start () {
+		myTimer= myTimer + Time.deltaTime;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		myTimer= myTimer + Time.deltaTime;
+		if(myTimer>=10)
+		{
+			spawnrate -= 1.5f;
+		}
+		if(myTimer>10)
+		{
+			myTimer=0;
+		}	
+		if (spawnrate <= 1) {
+			spawnrate += 1.5f;
+		}
 		if(Time.time > nextspawn)
 		{
 			nextspawn=Time.time + spawnrate;
