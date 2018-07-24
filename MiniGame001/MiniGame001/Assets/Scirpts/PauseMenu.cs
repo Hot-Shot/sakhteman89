@@ -5,6 +5,8 @@ using System.Collections;
 public class PauseMenu : MonoBehaviour {
 	public static bool GameIsPaused = false;
 	public GameObject PauseMenuUI;
+
+	
 	
 	// Update is called once per frame
 	void Update () {
@@ -24,7 +26,6 @@ public class PauseMenu : MonoBehaviour {
 		{
 			PauseMenuUI.SetActive(false);
 			GameIsPaused = false;
-
 		}
 		void Pause()
 		{
@@ -35,6 +36,7 @@ public class PauseMenu : MonoBehaviour {
 		Application.LoadLevel ("Sequence 0");
 	}
 	public void Restart(){
+		ScoringSystem.score = 0;
 		Application.LoadLevel (Application.loadedLevel);
 		GameIsPaused = false;
 	}
@@ -42,4 +44,5 @@ public class PauseMenu : MonoBehaviour {
 	{
 		Application.Quit ();
 	}
+
 }
