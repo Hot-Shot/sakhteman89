@@ -34,6 +34,10 @@ public class PauseMenu : MonoBehaviour {
 	public void Menu(){
 		Application.LoadLevel ("Sequence 0");
 	}
+	public void Restart(){
+		Application.LoadLevel (Application.loadedLevel);
+		GameIsPaused = false;
+	}
 	public void QuitGame()
 	{
 		Application.Quit ();
