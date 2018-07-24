@@ -36,6 +36,8 @@ public class PauseMenu : MonoBehaviour {
 		Application.LoadLevel ("Sequence 0");
 	}
 	public void Restart(){
+		GameManager.gameHasEnded = false;
+		Lives.miss = 3;
 		ScoringSystem.score = 0;
 		Application.LoadLevel (Application.loadedLevel);
 		GameIsPaused = false;
