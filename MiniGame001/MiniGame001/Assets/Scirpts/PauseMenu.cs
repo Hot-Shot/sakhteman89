@@ -39,8 +39,11 @@ public class PauseMenu : MonoBehaviour {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		GameManager.gameHasEnded = false;
 		Lives.miss = 3;
+=======
+>>>>>>> parent of fd17175... GameOverDesigned
 =======
 >>>>>>> parent of fd17175... GameOverDesigned
 =======

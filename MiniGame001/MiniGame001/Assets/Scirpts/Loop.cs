@@ -15,6 +15,7 @@ public class Loop : MonoBehaviour {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		myTimer += Time.deltaTime;
 		if (myTimer >= 10) {
 			speed += 0.045f;
@@ -35,6 +36,10 @@ public class Loop : MonoBehaviour {
 			GetComponent<Renderer> ().material.mainTextureOffset = offset;
 		}
 >>>>>>> fd17175614bf16adc07da4f8a69f05dd1a976f63
+=======
+		Vector2 offset = new Vector2 (0, Time.time * speed);
+		GetComponent<Renderer>().material.mainTextureOffset = offset;
+>>>>>>> parent of fd17175... GameOverDesigned
 =======
 		Vector2 offset = new Vector2 (0, Time.time * speed);
 		GetComponent<Renderer>().material.mainTextureOffset = offset;
