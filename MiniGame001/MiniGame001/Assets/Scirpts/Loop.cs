@@ -12,6 +12,7 @@ public class Loop : MonoBehaviour {
 	void Update () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		myTimer += Time.deltaTime;
 		if (myTimer >= 10) {
 			speed += 0.045f;
@@ -19,6 +20,8 @@ public class Loop : MonoBehaviour {
 		if (myTimer > 10) {
 			myTimer = 0f;
 		}
+=======
+>>>>>>> parent of e4dab28... buildingLoop
 =======
 >>>>>>> parent of e4dab28... buildingLoop
 		Vector2 offset = new Vector2 (0, Time.time * speed);

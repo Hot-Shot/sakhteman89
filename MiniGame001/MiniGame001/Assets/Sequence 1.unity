@@ -648,10 +648,14 @@ Transform:
   m_Father: {fileID: 1177697493}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 1
 =======
   m_RootOrder: 3
 >>>>>>> fd17175614bf16adc07da4f8a69f05dd1a976f63
+=======
+  m_RootOrder: 2
+>>>>>>> parent of e4dab28... buildingLoop
 =======
   m_RootOrder: 2
 >>>>>>> parent of e4dab28... buildingLoop
@@ -865,7 +869,10 @@ CanvasRenderer:
   m_GameObject: {fileID: 337238248}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of e4dab28... buildingLoop
 =======
 >>>>>>> parent of e4dab28... buildingLoop
 --- !u!1 &396555452
@@ -1009,8 +1016,12 @@ Transform:
   - {fileID: 1516289859}
   m_Father: {fileID: 1177697493}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 2
 >>>>>>> fd17175614bf16adc07da4f8a69f05dd1a976f63
+=======
+  m_RootOrder: 1
+>>>>>>> parent of e4dab28... buildingLoop
 =======
   m_RootOrder: 1
 >>>>>>> parent of e4dab28... buildingLoop
@@ -2662,10 +2673,14 @@ Transform:
   m_Father: {fileID: 1177697493}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 2
 =======
   m_RootOrder: 0
 >>>>>>> fd17175614bf16adc07da4f8a69f05dd1a976f63
+=======
+  m_RootOrder: 3
+>>>>>>> parent of e4dab28... buildingLoop
 =======
   m_RootOrder: 3
 >>>>>>> parent of e4dab28... buildingLoop
