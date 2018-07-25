@@ -2,8 +2,7 @@
 using System.Collections;
 
 public class Loop : MonoBehaviour {
-	public float speed=0.05f;
-	public float myTimer = 0.0f;
+	public float speed=0.5f;
 	// Use this for initialization
 	void Start () {
 	
@@ -12,6 +11,7 @@ public class Loop : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		myTimer += Time.deltaTime;
 		if (myTimer >= 10) {
 			speed += 0.045f;
@@ -19,6 +19,8 @@ public class Loop : MonoBehaviour {
 		if (myTimer > 10) {
 			myTimer = 0f;
 		}
+=======
+>>>>>>> parent of e4dab28... buildingLoop
 		Vector2 offset = new Vector2 (0, Time.time * speed);
 		GetComponent<Renderer>().material.mainTextureOffset = offset;
 =======
