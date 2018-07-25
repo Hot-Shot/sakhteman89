@@ -562,6 +562,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 1
 =======
   m_RootOrder: 3
@@ -572,6 +573,9 @@ Transform:
 =======
   m_RootOrder: 2
 >>>>>>> parent of e4dab28... buildingLoop
+=======
+  m_RootOrder: 2
+>>>>>>> parent of fd17175... GameOverDesigned
 --- !u!114 &328941069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -979,6 +983,7 @@ Transform:
   m_Father: {fileID: 1177697493}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 2
 >>>>>>> fd17175614bf16adc07da4f8a69f05dd1a976f63
 =======
@@ -989,6 +994,9 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> parent of e4dab28... buildingLoop
+=======
+  m_RootOrder: 1
+>>>>>>> parent of fd17175... GameOverDesigned
 --- !u!1 &559521207
 =======
 --- !u!1 &516092794
@@ -1990,10 +1998,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1338651977}
   - {fileID: 1376938019}
   - {fileID: 461084645}
   - {fileID: 328941068}
+  - {fileID: 1338651977}
   - {fileID: 2103971685}
   - {fileID: 1424221324}
   - {fileID: 1455142745}
@@ -2417,6 +2425,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 2
 =======
   m_RootOrder: 0
@@ -2427,6 +2436,9 @@ Transform:
 =======
   m_RootOrder: 3
 >>>>>>> parent of e4dab28... buildingLoop
+=======
+  m_RootOrder: 3
+>>>>>>> parent of fd17175... GameOverDesigned
 --- !u!114 &1338651978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2537,7 +2549,7 @@ Transform:
   m_LocalScale: {x: 32, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1177697493}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!114 &1376938020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3118,9 +3130,6 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
   GameOverUI: {fileID: 559521207}
-  ScoreUI: {fileID: 232780534}
-  LiveUI: {fileID: 1004437912}
-  Pausebtn: {fileID: 337238248}
   spawner1: {fileID: 328941067}
   spawner2: {fileID: 1338651976}
   spawner3: {fileID: 2103971684}

@@ -3,11 +3,12 @@
 public class GameManager : MonoBehaviour {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public static bool gameHasEnded = false;
+=======
+	bool gameHasEnded = false;
+>>>>>>> parent of fd17175... GameOverDesigned
 	public GameObject GameOverUI;
-	public GameObject ScoreUI;
-	public GameObject LiveUI;
-	public GameObject Pausebtn;
 	public GameObject spawner1;
 	public GameObject spawner2;
 	public GameObject spawner3;
@@ -15,9 +16,6 @@ public class GameManager : MonoBehaviour {
 	{
 		if (gameHasEnded == false)
 		{
-			ScoreUI.SetActive (false);
-			LiveUI.SetActive (false);
-			Pausebtn.SetActive (false);
 			GameOverUI.SetActive(true);
 =======
 	bool gameHasEnded = false;
@@ -42,11 +40,8 @@ public class GameManager : MonoBehaviour {
 	}
 	public void  Restart()
 	{
-		GameManager.gameHasEnded = false;
-		Lives.miss = 3;
 		ScoringSystem.score = 0;
 		Application.LoadLevel ("Sequence 1");
-		gameHasEnded=false;
 	}
 	
 }

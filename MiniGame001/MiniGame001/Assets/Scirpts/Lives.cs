@@ -13,6 +13,7 @@ public class Lives : MonoBehaviour {
 		if (miss <= 0) 
 		{
 			FindObjectOfType<GameManager>().EndGame();
+			FindObjectOfType<GameManager>().Restart();
 		}
 	
 	}
