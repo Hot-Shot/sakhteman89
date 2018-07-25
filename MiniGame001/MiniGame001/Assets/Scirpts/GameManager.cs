@@ -2,6 +2,7 @@
 
 public class GameManager : MonoBehaviour {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public static bool gameHasEnded = false;
 	public GameObject GameOverUI;
 	public GameObject ScoreUI;
@@ -18,6 +19,14 @@ public class GameManager : MonoBehaviour {
 			LiveUI.SetActive (false);
 			Pausebtn.SetActive (false);
 			GameOverUI.SetActive(true);
+=======
+	bool gameHasEnded = false;
+	public void EndGame()
+
+	{
+		if (gameHasEnded == false)
+		{
+>>>>>>> parent of 39ad3e4... GameOverPre
 =======
 	bool gameHasEnded = false;
 	public void EndGame()
