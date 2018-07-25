@@ -11,6 +11,7 @@ public class Loop : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+<<<<<<< HEAD
 		myTimer += Time.deltaTime;
 		if (myTimer >= 10) {
 			speed += 0.045f;
@@ -20,5 +21,12 @@ public class Loop : MonoBehaviour {
 		}
 		Vector2 offset = new Vector2 (0, Time.time * speed);
 		GetComponent<Renderer>().material.mainTextureOffset = offset;
+=======
+		if (PauseMenu.GameIsPaused == false && Lives.miss>0)
+		{
+			Vector2 offset = new Vector2 (0, Time.time * speed);
+			GetComponent<Renderer> ().material.mainTextureOffset = offset;
+		}
+>>>>>>> fd17175614bf16adc07da4f8a69f05dd1a976f63
 	}
 }
