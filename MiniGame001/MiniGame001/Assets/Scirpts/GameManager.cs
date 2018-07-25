@@ -4,7 +4,11 @@ public class GameManager : MonoBehaviour {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public static bool gameHasEnded = false;
+=======
+	bool gameHasEnded = false;
+>>>>>>> parent of fd17175... GameOverDesigned
 =======
 	bool gameHasEnded = false;
 >>>>>>> parent of fd17175... GameOverDesigned
@@ -42,6 +46,12 @@ public class GameManager : MonoBehaviour {
 	{
 		ScoringSystem.score = 0;
 		Application.LoadLevel ("Sequence 1");
+<<<<<<< HEAD
+=======
+	}
+	public void Menu(){
+		Application.LoadLevel ("Sequence 0");
+>>>>>>> parent of fd17175... GameOverDesigned
 	}
 	
 }
