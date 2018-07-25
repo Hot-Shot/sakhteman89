@@ -22,13 +22,12 @@ public class Lives : MonoBehaviour {
 
 			miss-=1;
 			Lifes.text = "Lives: "+""+ miss;
-
-
 			Destroy (col.gameObject);
-
 		} 
 		else if (col.gameObject.tag == "Enemy2")
 		{
+			miss-=1;
+			Lifes.text = "Lives: "+""+ miss;
 			Destroy (col.gameObject);
 		}
 	}

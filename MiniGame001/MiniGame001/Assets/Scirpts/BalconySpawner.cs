@@ -53,7 +53,9 @@ public class BalconySpawner : MonoBehaviour {
 				Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);		
 			}
 		}
+
 		
 	}
+
 	
 }

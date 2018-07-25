@@ -489,6 +489,8 @@ GameObject:
   - 4: {fileID: 136920717}
   - 212: {fileID: 136920716}
   - 61: {fileID: 136920718}
+  - 114: {fileID: 136920719}
+  - 50: {fileID: 136920720}
   m_Layer: 0
   m_Name: EnemyAtBalcony2
   m_TagString: Untagged
@@ -529,7 +531,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 136920715}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.0799999, y: -3.28999996, z: 0}
+  m_LocalPosition: {x: 9.81000042, y: -3.28999996, z: 0}
   m_LocalScale: {x: .230000004, y: .232655793, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -544,9 +546,36 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -2.40262079, y: -1.37208891}
+  m_Offset: {x: -.165611759, y: .032496471}
   serializedVersion: 2
-  m_Size: {x: 4.91512012, y: 5.63582087}
+  m_Size: {x: 12.4121265, y: 8.44499207}
+--- !u!114 &136920719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136920715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd05510c40b43e408da21bcd788b3ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &136920720
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136920715}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &232780534
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +706,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 331680946}
   - 212: {fileID: 331680945}
+  - 61: {fileID: 331680947}
+  - 114: {fileID: 331680948}
+  - 50: {fileID: 331680949}
   m_Layer: 0
   m_Name: Balcony
   m_TagString: Untagged
@@ -722,6 +754,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!61 &331680947
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 331680944}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 12.6400003, y: 8.38000011}
+--- !u!114 &331680948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 331680944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd05510c40b43e408da21bcd788b3ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &331680949
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 331680944}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &337238248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,6 +1699,7 @@ GameObject:
   - 212: {fileID: 1050268737}
   - 61: {fileID: 1050268740}
   - 50: {fileID: 1050268739}
+  - 114: {fileID: 1050268741}
   m_Layer: 0
   m_Name: EnemyAtBalcony
   m_TagString: Untagged
@@ -1667,7 +1740,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1050268736}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.6599998, y: -1.20000005, z: 0}
+  m_LocalPosition: {x: 12.8299999, y: -1.20000005, z: 0}
   m_LocalScale: {x: .230000004, y: .232655808, z: .25}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1698,9 +1771,20 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -2.25055933, y: -1.21066761}
+  m_Offset: {x: .00440763403, y: .00736091938}
   serializedVersion: 2
-  m_Size: {x: 5.21925306, y: 5.95866537}
+  m_Size: {x: 12.7977924, y: 8.39472294}
+--- !u!114 &1050268741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1050268736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd05510c40b43e408da21bcd788b3ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1121504946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2375,8 +2459,8 @@ MonoBehaviour:
   - {fileID: 1050268736}
   - {fileID: 136920715}
   myTimer: 0
-  spawnrate: 5
-  posX: -.808000028
+  spawnrate: 4.5
+  posX: -.855000019
   a: 0
   i: .400000006
   dlytime: 0
@@ -2387,7 +2471,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1278923962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.808000028, y: 8, z: 0}
+  m_LocalPosition: {x: -.855000019, y: 8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1177697493}
@@ -2592,7 +2676,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1376938016
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3399,6 +3483,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2019741205}
   - 212: {fileID: 2019741204}
+  - 50: {fileID: 2019741206}
   m_Layer: 0
   m_Name: WindowWithNoEnemy
   m_TagString: Untagged
@@ -3444,6 +3529,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!50 &2019741206
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2019741203}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2103971684
 GameObject:
   m_ObjectHideFlags: 0
