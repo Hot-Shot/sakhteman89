@@ -12,10 +12,7 @@ public class CameraMovement2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (PauseMenu.GameIsPaused) {
-			transform.Translate (0, 0, 0);
-		}
-		else {
+		if (PauseMenu.GameIsPaused == false && GameManager.gameHasEnded == false) {
 			myTimer += Time.deltaTime;
 			transform.Translate (0, i, 0);
 			if (myTimer >= 10) {

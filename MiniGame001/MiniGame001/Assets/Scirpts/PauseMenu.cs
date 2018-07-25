@@ -5,6 +5,8 @@ using System.Collections;
 public class PauseMenu : MonoBehaviour {
 	public static bool GameIsPaused = false;
 	public GameObject PauseMenuUI;
+
+	
 	
 	// Update is called once per frame
 	void Update () {
@@ -24,7 +26,6 @@ public class PauseMenu : MonoBehaviour {
 		{
 			PauseMenuUI.SetActive(false);
 			GameIsPaused = false;
-
 		}
 		void Pause()
 		{
@@ -35,24 +36,9 @@ public class PauseMenu : MonoBehaviour {
 		Application.LoadLevel ("Sequence 0");
 	}
 	public void Restart(){
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 		GameManager.gameHasEnded = false;
 		Lives.miss = 3;
-=======
->>>>>>> parent of fd17175... GameOverDesigned
-=======
->>>>>>> parent of fd17175... GameOverDesigned
-=======
->>>>>>> parent of fd17175... GameOverDesigned
 		ScoringSystem.score = 0;
-=======
->>>>>>> parent of 39ad3e4... GameOverPre
-=======
->>>>>>> parent of 39ad3e4... GameOverPre
 		Application.LoadLevel (Application.loadedLevel);
 		GameIsPaused = false;
 	}
@@ -60,4 +46,5 @@ public class PauseMenu : MonoBehaviour {
 	{
 		Application.Quit ();
 	}
+
 }

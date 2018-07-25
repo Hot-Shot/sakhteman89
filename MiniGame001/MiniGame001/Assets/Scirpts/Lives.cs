@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class Lives : MonoBehaviour {
-	public int miss=3;
+	public static int miss=3;
 	public Text Lifes = null;
 	void start() {
 	}
@@ -13,9 +13,7 @@ public class Lives : MonoBehaviour {
 		if (miss <= 0) 
 		{
 			FindObjectOfType<GameManager>().EndGame();
-			FindObjectOfType<GameManager>().Restart();
 		}
-	
 	}
 
 	void OnTriggerEnter2D(Collider2D col)
