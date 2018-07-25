@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 public class GameManager : MonoBehaviour {
+<<<<<<< HEAD
 	public static bool gameHasEnded = false;
 	public GameObject GameOverUI;
 	public GameObject ScoreUI;
@@ -17,13 +18,20 @@ public class GameManager : MonoBehaviour {
 			LiveUI.SetActive (false);
 			Pausebtn.SetActive (false);
 			GameOverUI.SetActive(true);
+=======
+	bool gameHasEnded = false;
+	public void EndGame()
+
+	{
+		if (gameHasEnded == false)
+		{
+>>>>>>> parent of 39ad3e4... GameOverPre
 			gameHasEnded = true;
-			spawner1.SetActive(false);
-			spawner2.SetActive(false);
-			spawner3.SetActive(false);
+			Debug.Log ("GAME OVER");
+			Invoke("Restart", 1f);
 		}
 	}
-	public void Restart()
+	public void  Restart()
 	{
 		GameManager.gameHasEnded = false;
 		Lives.miss = 3;
@@ -31,7 +39,5 @@ public class GameManager : MonoBehaviour {
 		Application.LoadLevel ("Sequence 1");
 		gameHasEnded=false;
 	}
-	public void Menu(){
-		Application.LoadLevel ("Sequence 0");
-	}
+	
 }
