@@ -12,7 +12,7 @@ public class Loop : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		myTimer = myTimer + Time.deltaTime;
-		if (myTimer >= 10)
+		if (myTimer > 10)
 		{
 			speed+=0.042f;
 			myTimer=0;
