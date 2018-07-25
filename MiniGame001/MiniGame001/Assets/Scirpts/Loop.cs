@@ -11,13 +11,6 @@ public class Loop : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		myTimer += Time.deltaTime;
-		if (myTimer >= 10) {
-			speed += 0.044f;
-		}
-		if (myTimer > 10) {
-			myTimer = 0f;
-		}
 		if (PauseMenu.GameIsPaused == false && Lives.miss>0)
 		{
 			Vector2 offset = new Vector2 (0, Time.time * speed);
