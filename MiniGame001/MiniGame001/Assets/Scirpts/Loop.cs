@@ -4,7 +4,6 @@ using System.Collections;
 public class Loop : MonoBehaviour {
 	public float speed=0.1f;
 	public float myTimer = 0.0f;
-	public float myTimer2=0.0f;
 	// Use this for initialization
 	void Start () {
 	
@@ -15,7 +14,7 @@ public class Loop : MonoBehaviour {
 		myTimer = myTimer + Time.deltaTime;
 		if (myTimer >= 10)
 		{
-			speed+=0.1f;
+			speed+=0.042f;
 			myTimer=0;
 		}
 		if (PauseMenu.GameIsPaused == false && Lives.miss>0)
