@@ -13,6 +13,7 @@ public class Loop : MonoBehaviour {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		myTimer += Time.deltaTime;
 		if (myTimer >= 10) {
 			speed += 0.045f;
@@ -20,6 +21,8 @@ public class Loop : MonoBehaviour {
 		if (myTimer > 10) {
 			myTimer = 0f;
 		}
+=======
+>>>>>>> parent of e4dab28... buildingLoop
 =======
 >>>>>>> parent of e4dab28... buildingLoop
 =======
