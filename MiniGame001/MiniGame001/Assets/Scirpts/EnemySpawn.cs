@@ -49,8 +49,6 @@ public class EnemySpawn : MonoBehaviour {
 				randEnemy = Random.Range (0, 3);
 				whereToSpawn = new Vector2 (posX, transform.position.y);
 				Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);		
-				dlytime=0f;
-				
 			}
 		}
 		

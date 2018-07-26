@@ -10,6 +10,7 @@ public class EnemySpawner2 : MonoBehaviour {
 	float nextspawn = 0.0f;
 	public int a=0;
 	public float i=0.4f;
+	public int c = 0;
 	public float dlytime=0.0f;
 	int randEnemy;
 	// Use this for initialization
@@ -50,7 +51,14 @@ public class EnemySpawner2 : MonoBehaviour {
 				nextspawn = Time.time + spawnrate - i + dlytime;
 				randEnemy = Random.Range (0, 3);
 				whereToSpawn = new Vector2 (posX, transform.position.y);
-				Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);		
+				if (FindObjectOfType<EnemySpawner3>().u==4 || FindObjectOfType<EnemySpawner3>().u==5 || FindObjectOfType<EnemySpawner3>().u==6)
+				{
+					c+=1;
+				}
+				else
+				{
+				Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);
+				}
 			}
 		}
 		

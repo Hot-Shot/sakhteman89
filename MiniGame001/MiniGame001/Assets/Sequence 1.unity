@@ -491,6 +491,7 @@ GameObject:
   - 61: {fileID: 136920718}
   - 114: {fileID: 136920719}
   - 50: {fileID: 136920720}
+  - 114: {fileID: 136920721}
   m_Layer: 0
   m_Name: EnemyAtBalcony2
   m_TagString: Untagged
@@ -576,6 +577,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &136920721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136920715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ae1caa7616439409db680291f7d787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scores: {fileID: 232780536}
 --- !u!1 &232780534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1782,9 +1795,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1050268736}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cd05510c40b43e408da21bcd788b3ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 78ae1caa7616439409db680291f7d787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scores: {fileID: 232780536}
 --- !u!1 &1121504946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2167,7 +2181,6 @@ Transform:
   - {fileID: 2103971685}
   - {fileID: 1757919097}
   - {fileID: 1853351641}
-  - {fileID: 1278923964}
   m_Father: {fileID: 0}
   m_RootOrder: 4
 --- !u!82 &1177697495
@@ -2427,55 +2440,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1238154066}
---- !u!1 &1278923962
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1278923964}
-  - 114: {fileID: 1278923963}
-  m_Layer: 0
-  m_Name: BalconySpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1278923963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1278923962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52b2d0abb585754a9c405f14b339673, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 331680944}
-  - {fileID: 1050268736}
-  - {fileID: 136920715}
-  myTimer: 0
-  spawnrate: 4.5
-  posX: -.855000019
-  a: 0
-  i: .400000006
-  dlytime: 0
---- !u!4 &1278923964
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1278923962}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.855000019, y: 8, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1177697493}
-  m_RootOrder: 6
 --- !u!1 &1305074341
 GameObject:
   m_ObjectHideFlags: 0
@@ -2657,6 +2621,7 @@ MonoBehaviour:
   posX: 0
   a: 0
   i: .400000006
+  c: 0
   dlytime: 1
 --- !u!1 &1376938015
 GameObject:
@@ -3295,8 +3260,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1775734975}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0299999993, y: -.850000024, z: 0}
-  m_LocalScale: {x: .230000004, y: .230000004, z: 1}
+  m_LocalPosition: {x: .0299999993, y: -.150000006, z: 0}
+  m_LocalScale: {x: .230000004, y: .25999999, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -3588,12 +3553,16 @@ MonoBehaviour:
   - {fileID: 2019741203}
   - {fileID: 957074649}
   - {fileID: 1140456016}
+  - {fileID: 1050268736}
+  - {fileID: 136920715}
+  - {fileID: 331680944}
   myTimer: 0
   spawnrate: 4.5
   posX: -1.70000005
   a: 0
   i: .400000006
   dlytime: 0
+  u: 0
 --- !u!1 &2114737402
 GameObject:
   m_ObjectHideFlags: 0
