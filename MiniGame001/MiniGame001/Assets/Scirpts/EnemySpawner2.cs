@@ -46,19 +46,11 @@ public class EnemySpawner2 : MonoBehaviour {
 				a = 0;
 			}
 		
-			if (Time.time > nextspawn) {
+			if (Time.time > nextspawn && FindObjectOfType<EnemySpawner3>().u==4 || FindObjectOfType<EnemySpawner3>().u==5 || FindObjectOfType<EnemySpawner3>().u==6 ) {
 				dlytime=0f;
 				nextspawn = Time.time + spawnrate - i + dlytime;
 				randEnemy = Random.Range (0, 3);
 				whereToSpawn = new Vector2 (posX, transform.position.y);
-				if (FindObjectOfType<EnemySpawner3>().u==4 || FindObjectOfType<EnemySpawner3>().u==5 || FindObjectOfType<EnemySpawner3>().u==6)
-				{
-					c+=1;
-				}
-				else
-				{
-				Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);
-				}
 			}
 		}
 		
