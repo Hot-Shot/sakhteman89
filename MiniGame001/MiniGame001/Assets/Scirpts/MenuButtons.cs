@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Audio;
 
 public class MenuButtons : MonoBehaviour {
 
@@ -10,5 +11,8 @@ public class MenuButtons : MonoBehaviour {
 	public void QuitGame()
 	{
 		Application.Quit ();
+	}
+	public void Mute(){
+		AudioListener.pause = !AudioListener.pause;
 	}
 }
