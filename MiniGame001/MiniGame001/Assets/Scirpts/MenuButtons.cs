@@ -3,6 +3,8 @@ using System.Collections;
 using UnityEngine.Audio;
 
 public class MenuButtons : MonoBehaviour {
+	public GameObject Button1;
+	public GameObject Button2;
 	void Update(){
 		GameManager.gameHasEnded = false;
 	}
