@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 	public static bool gameHasEnded = false;
+	public Text FinalScore = null;
 	public GameObject GameOverUI;
 	public GameObject ScoreUI;
 	public GameObject LiveUI;
@@ -13,6 +15,7 @@ public class GameManager : MonoBehaviour {
 	{
 		if (gameHasEnded == false)
 		{
+			FinalScore.text = "Final Score:" + "" + ScoringSystem.score;
 			ScoreUI.SetActive (false);
 			LiveUI.SetActive (false);
 			Pausebtn.SetActive (false);
