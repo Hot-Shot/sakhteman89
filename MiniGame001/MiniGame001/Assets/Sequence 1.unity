@@ -708,8 +708,10 @@ MonoBehaviour:
   spawnrate: 4.5
   posX: 1.70000005
   a: 0
+  c: 2
   i: .400000006
   dlytime: 0
+  myTimer3: 0
 --- !u!1 &331680944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2650,6 +2652,7 @@ MonoBehaviour:
   i: .400000006
   c: 0
   dlytime: 1
+  myTimer3: 0
 --- !u!1 &1376938015
 GameObject:
   m_ObjectHideFlags: 0
@@ -3590,6 +3593,8 @@ MonoBehaviour:
   i: .400000006
   dlytime: 0
   u: 0
+  c: 2
+  myTimer3: 0
 --- !u!1 &2114737402
 GameObject:
   m_ObjectHideFlags: 0
