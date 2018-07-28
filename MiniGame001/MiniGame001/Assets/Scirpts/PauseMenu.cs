@@ -33,6 +33,7 @@ public class PauseMenu : MonoBehaviour {
 			GameIsPaused = true;
 		}
 	public void Menu(){
+		GameIsPaused = false;
 		Application.LoadLevel ("Sequence 0");
 	}
 	public void Restart(){
