@@ -9,17 +9,11 @@ public class EnemySpawn : MonoBehaviour {
 	public float posX = 1.7f;
 	float nextspawn = 0.0f;
 	public int a=0;
-	public float c=1.5f;
+	public float c=2f;
 	public float i=0.4f;
-	public float dlytime=0.0f;
 	public float myTimer3=0.0f;
 	int randEnemy;
 	// Use this for initialization
-	public void awake(){
-		if (PauseMenu.GameIsPaused == true) {
-			dlytime+=1f;
-		}
-	}
 	void Start () {
 
 	}
@@ -47,8 +41,10 @@ public class EnemySpawn : MonoBehaviour {
 				i -= 0.1f;
 				a = 0;
 			}
-			if(myTimer3>c){
-			if (Time.time > nextspawn) {
+			if(myTimer3>c)
+			{
+			if (Time.time > nextspawn) 
+			{
 				nextspawn = Time.time + spawnrate - i;
 				randEnemy = Random.Range (0, 3);
 				whereToSpawn = new Vector2 (posX, transform.position.y);

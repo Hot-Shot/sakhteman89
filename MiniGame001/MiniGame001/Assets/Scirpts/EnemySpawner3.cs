@@ -22,6 +22,23 @@ public class EnemySpawner3 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (PauseMenu.GameIsPaused == false) {
+			if(myTimer3>c){
+				if (Time.time > nextspawn) {
+					nextspawn = Time.time + spawnrate - i;
+					randEnemy = Random.Range (0, 6);
+					u=randEnemy;
+					whereToSpawn = new Vector2 (posX, transform.position.y);
+					if (u==3 || u==4 || u==5)
+					{
+						whereToSpawn = new Vector2(-0.82f, transform.position.y);
+						Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);
+					}
+					else if (u==0 || u==1 || u==2)
+					{
+						Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);		
+					}
+				}
+			}
 			myTimer3=myTimer3+Time.deltaTime;
 			myTimer = myTimer + Time.deltaTime;
 			if (myTimer >= 10) {
@@ -42,29 +59,7 @@ public class EnemySpawner3 : MonoBehaviour {
 				a = 0;
 			}
 	
-			if(myTimer3>c){
-			if (Time.time > nextspawn) {
-				nextspawn = Time.time + spawnrate - i;
-				randEnemy = Random.Range (0, 6);
-				u=randEnemy;
-				whereToSpawn = new Vector2 (posX, transform.position.y);
-				if (u==3 || u==4 || u==5)
-				{
-					whereToSpawn = new Vector2(-0.82f, transform.position.y);
-					Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);
-					dlytime=0f;
-				}
-				else if (u==0 || u==1 || u==2)
-				{
-					Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);		
-					dlytime=0f;
-				}
-				}
-
-			
-
-				
-			}
+	
 		
 
 
