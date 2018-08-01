@@ -11,16 +11,16 @@ public class Loop : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		myTimer = myTimer + Time.deltaTime;
-		if (myTimer > 10)
-		{
-			speed+=0.042f;
-			myTimer=0;
-		}
-		if (PauseMenu.GameIsPaused == false && Lives.miss>0)
-		{
-			Vector2 offset = new Vector2 (0, Time.time * speed);
-			GetComponent<Renderer> ().material.mainTextureOffset = offset;
+		if (PauseMenu.GameIsPaused == false) {
+			myTimer = myTimer + Time.deltaTime;
+			if (myTimer > 10) {
+				speed += 0.042f;
+				myTimer = 0;
+			}
+			if (PauseMenu.GameIsPaused == false && Lives.miss > 0) {
+				Vector2 offset = new Vector2 (0, Time.time * speed);
+				GetComponent<Renderer> ().material.mainTextureOffset = offset;
+			}
 		}
 	}
 }
