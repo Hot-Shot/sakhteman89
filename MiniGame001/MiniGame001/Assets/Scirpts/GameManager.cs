@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour {
 	{
 		if (gameHasEnded == false)
 		{
-			FinalScore.text = "Final Score:" + "" + ScoringSystem.score;
+			FinalScore.text = ""+ScoringSystem.score;
 			ScoreUI.SetActive (false);
 			LiveUI.SetActive (false);
 			Pausebtn.SetActive (false);
