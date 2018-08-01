@@ -1483,7 +1483,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 957074649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.8999996, y: .959999979, z: 0}
+  m_LocalPosition: {x: 10.4300003, y: .870000005, z: 0}
   m_LocalScale: {x: .230000004, y: .25999999, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2081,6 +2081,7 @@ Transform:
   - {fileID: 2103971685}
   - {fileID: 1757919097}
   - {fileID: 1853351641}
+  - {fileID: 1796889793}
   m_Father: {fileID: 0}
   m_RootOrder: 4
 --- !u!82 &1177697495
@@ -3059,6 +3060,60 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
+--- !u!1 &1796889792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1796889793}
+  - 212: {fileID: 1796889794}
+  m_Layer: 0
+  m_Name: retro-video-game-pixel-art-blue-sky-background-pixelated-clouds-hd-animation_hihuha98x_thumbnail-full01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1796889793
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796889792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.3900001, y: .959999979, z: 12.9099998}
+  m_LocalScale: {x: .992994249, y: 1.36741447, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1177697493}
+  m_RootOrder: 6
+--- !u!212 &1796889794
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796889792}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 3e4fdbdbe75478348972c328b1786eeb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1853351640
 GameObject:
   m_ObjectHideFlags: 0
@@ -3071,7 +3126,7 @@ GameObject:
   - 64: {fileID: 1853351644}
   - 23: {fileID: 1853351643}
   - 114: {fileID: 1853351642}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3101,7 +3156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8785a8ea652312e4faf5a3f282ea63f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: .0419999994
+  speed: .0430000015
   myTimer: 0
 --- !u!23 &1853351643
 MeshRenderer:
