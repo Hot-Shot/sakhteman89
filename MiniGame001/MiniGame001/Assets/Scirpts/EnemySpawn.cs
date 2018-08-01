@@ -46,7 +46,7 @@ public class EnemySpawn : MonoBehaviour {
 			if (Time.time > nextspawn) 
 			{
 				nextspawn = Time.time + spawnrate - i;
-				randEnemy = Random.Range (0, 3);
+				randEnemy = Random.Range (0, 4);
 				whereToSpawn = new Vector2 (posX, transform.position.y);
 				Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);		
 			}
