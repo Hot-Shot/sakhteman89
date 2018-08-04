@@ -43,11 +43,11 @@ public class EnemySpawner3 : MonoBehaviour {
 			}
 			if(myTimer3>c){
 				if (Time.time > nextspawn) {
-					randEnemy = Random.Range (0, 6);
+					randEnemy = Random.Range (0, 8);
 					u=randEnemy;
 					nextspawn = Time.time + spawnrate - i;
 					whereToSpawn = new Vector2 (posX, transform.position.y);
-					if (u==3 || u==4 || u==5)
+					if (u>=3)
 					{
 						whereToSpawn = new Vector2(-0.82f, transform.position.y);
 						Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);
