@@ -97,9 +97,10 @@ GameObject:
   - 95: {fileID: 110001216}
   - 61: {fileID: 110001220}
   - 114: {fileID: 110001219}
+  - 114: {fileID: 110001221}
   m_Layer: 0
   m_Name: InnocentCharacter
-  m_TagString: Untagged
+  m_TagString: Innocent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,6 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f8d71da07b33d489d2c5e597e1e4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Death: {fileID: 110001216}
   Dec: {fileID: 232780536}
   Hit: {fileID: 1004437914}
 --- !u!61 &110001220
@@ -185,6 +187,17 @@ BoxCollider2D:
   m_Offset: {x: .184592888, y: -1.55545521}
   serializedVersion: 2
   m_Size: {x: 4.95462322, y: 5.03346014}
+--- !u!114 &110001221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 110001215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8feae118a537d4ea32c079a8c3fd1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &132192944
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,7 +345,7 @@ GameObject:
   - 114: {fileID: 136920721}
   m_Layer: 0
   m_Name: EnemyAtBalcony2
-  m_TagString: Untagged
+  m_TagString: Enemy5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -441,7 +454,7 @@ GameObject:
   - 114: {fileID: 170154502}
   m_Layer: 0
   m_Name: WindowWithEnemy1
-  m_TagString: Untagged
+  m_TagString: Enemy2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -755,7 +768,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 331680944}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.80000019, y: 3.05999994, z: 0}
+  m_LocalPosition: {x: 16.2399998, y: -3.27999997, z: 0}
   m_LocalScale: {x: .230000004, y: .232655793, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1905,7 +1918,7 @@ GameObject:
   - 114: {fileID: 1050268741}
   m_Layer: 0
   m_Name: EnemyAtBalcony
-  m_TagString: Untagged
+  m_TagString: Enemy4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1974,9 +1987,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: .00440763403, y: .00736091938}
+  m_Offset: {x: -2.1503489, y: -1.29681504}
   serializedVersion: 2
-  m_Size: {x: 12.7977924, y: 8.39472294}
+  m_Size: {x: 4.8823719, y: 5.78637075}
 --- !u!114 &1050268741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2218,7 +2231,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1177697488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1338651977}
@@ -2382,7 +2395,7 @@ GameObject:
   - 114: {fileID: 1238224956}
   m_Layer: 0
   m_Name: EnemyAtBalcony3
-  m_TagString: Untagged
+  m_TagString: Enemy3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2413,9 +2426,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: .251576185, y: -.754711747}
   serializedVersion: 2
-  m_Size: {x: 15.7000008, y: 20.9400005}
+  m_Size: {x: 4.53027439, y: 7.05331707}
 --- !u!95 &1238224953
 Animator:
   serializedVersion: 3
@@ -3395,7 +3408,7 @@ GameObject:
   - 114: {fileID: 2033234842}
   m_Layer: 0
   m_Name: WindowWithEnemy2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
