@@ -11,11 +11,13 @@ public class SkyLoop : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (PauseMenu.GameIsPaused == false) {
 			myTimer = myTimer + Time.deltaTime;
-				speed += 0.000001f;
-				myTimer = 0;
-		Vector2 offset = new Vector2 (Time.time * speed,0 );
-				GetComponent<Renderer> ().material.mainTextureOffset = offset;
-			}
+			speed += 0.000001f;
+			myTimer = 0;
+			Vector2 offset = new Vector2 (Time.time * speed, 0);
+			GetComponent<Renderer> ().material.mainTextureOffset = offset;
+		}
+	}
 	
 }
