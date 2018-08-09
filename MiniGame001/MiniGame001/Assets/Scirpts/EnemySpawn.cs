@@ -9,7 +9,7 @@ public class EnemySpawn : MonoBehaviour {
 	public float posX = 1.7f;
 	float nextspawn = 0.0f;
 	public int a=0;
-	public float c=2f;
+	public float c=0.5f;
 	public float i=0.4f;
 	public float myTimer3=0.0f;
 	int randEnemy;

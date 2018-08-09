@@ -12,7 +12,7 @@ public class EnemySpawner3 : MonoBehaviour {
 	public float i=0.4f;
 	public float dlytime=0.0f;
 	public int u=0;
-	public float c=1.5f;
+	public float c=0.5f;
 	public float myTimer3=0.0f;
 	int randEnemy;
 	// Use this for initialization
@@ -52,7 +52,7 @@ public class EnemySpawner3 : MonoBehaviour {
 						whereToSpawn = new Vector2(-0.82f, transform.position.y);
 						Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);
 					}
-					else if (u==0 || u==1 || u==2)
+					else if (u<3)
 					{
 						Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);		
 					}

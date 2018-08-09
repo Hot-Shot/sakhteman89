@@ -11,7 +11,7 @@ public class EnemySpawner2 : MonoBehaviour {
 	public int a=0;
 	public int p;
 	public float i=0.4f;
-	public float c=1.5f;
+	public float c=0.6f;
 	public float myTimer3=0.0f;
 	int randEnemy;
 	// Use this for initialization
