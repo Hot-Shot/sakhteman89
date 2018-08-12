@@ -28,13 +28,9 @@ public class CameraMovement2 : MonoBehaviour {
 		}
 		if (PauseMenu.GameIsPaused == false && GameManager.gameHasEnded == false) {
 			myTimer += Time.deltaTime;
-			transform.Translate (0, i, 0);
-			if (myTimer >= 10) {
-				i += 0.01f;
-			}
-			if (myTimer > 10) {
-				myTimer = 0f;
-			}
+			transform.Translate (0, i * Camera.main.transform.position.y / 10, 0);
+
+
 		}
 	}
 }

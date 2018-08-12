@@ -20,7 +20,7 @@ public class EnemySpawner2 : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (PauseMenu.GameIsPaused == false)
 		{
 			p=FindObjectOfType<EnemySpawner3>().u;

@@ -20,7 +20,7 @@ public class EnemySpawner3 : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (PauseMenu.GameIsPaused == false) {
 			myTimer3=myTimer3+Time.deltaTime;
 			myTimer = myTimer + Time.deltaTime;
