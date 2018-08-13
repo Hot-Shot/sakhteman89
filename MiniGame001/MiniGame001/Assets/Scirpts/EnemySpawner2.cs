@@ -10,7 +10,7 @@ public class EnemySpawner2 : MonoBehaviour {
 	float nextspawn = 0.0f;
 	public int a=0;
 	public int p;
-	public float i=0.4f;
+	public float dlytime=0.4f;
 	public float c=0.6f;
 	public float myTimer3=0.0f;
 	int randEnemy;
@@ -35,22 +35,22 @@ public class EnemySpawner2 : MonoBehaviour {
 			}
 			if (spawnrate <= 1) 
 			{
-				spawnrate += i;
+				spawnrate += dlytime;
 			}
-			if (i <= 0.01) 
+			if (dlytime <= 0.01) 
 			{
-				i += 0.2f;
+				dlytime += 0.2f;
 			}
 			if (a >= 2) 
 			{
-				i -= 0.1f;
+				dlytime -= 0.1f;
 				a = 0;
 			}
 			if(myTimer3>c)
 			{
 			if (Time.time > nextspawn && p<3) 
 			{
-				nextspawn = Time.time + spawnrate - i;
+				nextspawn = Time.time + spawnrate - dlytime;
 				randEnemy = Random.Range (0, 4);
 				whereToSpawn = new Vector2 (posX, transform.position.y);
 				Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);	

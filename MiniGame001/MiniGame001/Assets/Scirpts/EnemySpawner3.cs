@@ -9,8 +9,7 @@ public class EnemySpawner3 : MonoBehaviour {
 	public float posX = 1.7f;
 	float nextspawn = 0.0f;
 	public int a=0;
-	public float i=0.4f;
-	public float dlytime=0.0f;
+	public float dlytime=0.4f;
 	public int u=0;
 	public float c=0.5f;
 	public float myTimer3=0.0f;
@@ -31,21 +30,21 @@ public class EnemySpawner3 : MonoBehaviour {
 				myTimer = 0;
 			}
 			if (spawnrate <= 1) {
-				spawnrate += i;
+				spawnrate += dlytime;
 			}
-			if (i <= 0.01) {
-				i += 0.2f;
+			if (dlytime <= 0.01) {
+				dlytime += 0.2f;
 			}
 			if (a >= 2) {
 
-				i -= 0.1f;
+				dlytime -= 0.1f;
 				a = 0;
 			}
 			if(myTimer3>c){
 				if (Time.time > nextspawn) {
 					randEnemy = Random.Range (0, 9);
 					u=randEnemy;
-					nextspawn = Time.time + spawnrate - i;
+					nextspawn = Time.time + spawnrate - dlytime;
 					whereToSpawn = new Vector2 (posX, transform.position.y);
 					if (u>=3)
 					{
