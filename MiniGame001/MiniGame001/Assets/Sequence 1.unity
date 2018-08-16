@@ -393,7 +393,7 @@ MonoBehaviour:
   posX: 1.70000005
   a: 0
   c: 2
-  i: .400000006
+  dlytime: .400000006
   myTimer3: 0
 --- !u!1 &331680944
 GameObject:
@@ -2746,7 +2746,7 @@ MonoBehaviour:
   posX: 0
   a: 0
   p: 0
-  i: .400000006
+  dlytime: .400000006
   c: 3
   myTimer3: 0
 --- !u!1 &1376938015
@@ -4022,7 +4022,6 @@ MonoBehaviour:
   spawnrate: 4.5
   posX: -1.70000005
   a: 0
-  i: .400000006
   dlytime: 0
   u: 0
   c: 2
