@@ -7,6 +7,8 @@ public class ScoringSystem : MonoBehaviour {
 	public static int score=0;
 	public Text scores = null;
 	public void OnMouseDown() {
+		if (PauseMenu.GameIsPaused||GameManager.gameHasEnded)
+			return;
 		Death.SetBool ("Active", true);
 		score += 100;
 		scores.text =""+ score;

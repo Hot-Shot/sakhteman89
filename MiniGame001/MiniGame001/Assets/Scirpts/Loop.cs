@@ -20,7 +20,7 @@ public class Loop : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void LateUpdate () {
 		//if we're not puased
 		if (PauseMenu.GameIsPaused == false) {
 			//we give my timer the delta time value
@@ -29,7 +29,7 @@ public class Loop : MonoBehaviour {
 
 			//if we're not puased and we still have hp
 			if (PauseMenu.GameIsPaused == false && Lives.miss > 0) {
-				Vector2 offset = new Vector2 (0, (_cameraLastPos - Camera.main.transform.position).y / 15);
+				Vector2 offset = new Vector2 (0, (_cameraLastPos - Camera.main.transform.position).y / 14);
 				_cameraLastPos = Camera.main.transform.position;
 				GetComponent<Renderer> ().material.mainTextureOffset =GetComponent<Renderer> ().material.mainTextureOffset - offset;
 			}

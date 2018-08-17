@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using System;
+using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
@@ -11,6 +13,9 @@ public class GameManager : MonoBehaviour {
 	public GameObject spawner1;
 	public GameObject spawner2;
 	public GameObject spawner3;
+	/// <summary>
+	/// sets ui for game ending
+	/// </summary>
 	public void EndGame ()
 	{
 		if (gameHasEnded == false)
@@ -21,11 +26,15 @@ public class GameManager : MonoBehaviour {
 			Pausebtn.SetActive (false);
 			GameOverUI.SetActive(true);
 			gameHasEnded = true;
-			spawner1.SetActive(false);
-			spawner2.SetActive(false);
-			spawner3.SetActive(false);
+
 		}
 	}
+
+
+
+	/// <summary>
+	/// restart the game vars
+	/// </summary>
 	public void Restart()
 	{
 		GameManager.gameHasEnded = false;

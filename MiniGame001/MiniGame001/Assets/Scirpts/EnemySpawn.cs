@@ -1,78 +1,91 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 
 public class EnemySpawn : MonoBehaviour {
-	public GameObject[] enemies;
-	Vector2 whereToSpawn;
-	public float myTimer;
-	public float spawnrate = 4f;
-	public float posX = 1.7f;
-	float nextspawn = 0.0f;
-	public int a=0;
-	public float c=0.5f;
-	public float dlytime=0.4f;
-	public float myTimer3=0.0f;
-	int randEnemy;
+	public GameObject[] windowWithEnemy;
+	public GameObject[] noEnemyWindow;
+	public GameObject[] BalconyWithEnemy;
+	public GameObject[] BalconyWithNoEnemy;
+	public GameObject[] spawnPoints = new GameObject[3];
+	public float enemyDistances;
+	GameObject lastItem;
+
+
+
 	// Use this for initialization
 	void Start () {
+		RandomizeEnemy ();
+	}
 
+	void Update()
+	{
+		if (PauseMenu.GameIsPaused || GameManager.gameHasEnded) 
+			return;
+		if (enemyDistances > (this.transform.position.y - lastItem.transform.position.y))
+			return;
+
+		RandomizeEnemy ();
+	}
+
+	void RandomizeEnemy()
+	{
+		int r = UnityEngine. Random.Range (0,5);
+
+		for (int i = 0; i < 3; i++) {
+			if (UnityEngine.Random.Range (0, 2) == 1) {
+
+
+
+				if(UnityEngine.Random.Range (0, 2) == 1)
+				{
+					SpawnWindowWithEnemy(i);				
+				}
+				else
+				{
+					if(i != 1)
+					{
+						SpawnWindowWithEnemy(i);
+					}else{
+						
+						lastItem = (GameObject)Instantiate (BalconyWithEnemy [UnityEngine.Random.Range (0, BalconyWithEnemy.Length )],
+						                                    spawnPoints [i].transform.position, Quaternion.identity);
+						i++;
+					}
+				}
+			} else {
+				if(UnityEngine.Random.Range (0, 2) == 1)
+				{
+					SpawnWindowWithNoEnemy(i);				
+				}
+				else
+				{
+					if(i != 1)
+					{
+						SpawnWindowWithNoEnemy(i);
+					}else{
+						
+						lastItem = (GameObject)Instantiate (BalconyWithNoEnemy [UnityEngine.Random.Range (0, BalconyWithNoEnemy.Length)],
+						                                    spawnPoints [i].transform.position, Quaternion.identity);
+						i++;
+					}
+				}
+			}
+		}
+	}
+
+
+	void SpawnWindowWithEnemy(int i)
+	{
+		lastItem = (GameObject)Instantiate (windowWithEnemy [UnityEngine.Random.Range (0, windowWithEnemy.Length)],
+		                                    spawnPoints [i].transform.position, Quaternion.identity);
 	}
 	
-	// Update is called once per frame
-	void FixedUpdate () {
-		//We Check If The Game is Paused Or Not
-		if (PauseMenu.GameIsPaused == false)
-		{
-			//We Use 2 Timers: 1 For Checking The Speed of The Camera & 1 For Making a Dly When The Game is Paused Or Resumed!
-			myTimer = myTimer + Time.deltaTime;
-			myTimer3=myTimer3+Time.deltaTime;
-			//After The Timer Hits 10 Seconds We Make The Dly For Pausing The Game Lower, Also We Make The Speed of The Spawning Faster Than Before
-			//By Lowering The Spawn Rate Time
-			//We Make A Loop By Making The Timer Go to 0 Again
-			if (myTimer >= 10) {
-				c-=0.1f;
-				a += 1;
-				spawnrate -= 1.5f;
-				myTimer = 0;
-			}
-			//We Check If The SpawnRate Got Lower Than 0 and We Make it Go a Little Bit Higher
-			if (spawnrate <= 1) {
-				spawnrate += dlytime;
-			}
-			//We Make The i Go A Little Higher In Case it Got To 0.01
-			if (dlytime <= 0.01) {
-				dlytime += 0.2f;
-			}
-			//To Check That Every 2 Times That the Camera Got more Speed The DlyTime Gets 0.1 Lower
-			if (a >= 2) {
-			
-				dlytime -= 0.1f;
-				a = 0;
-			}
-			//a Timer to Make a Dly When The game is Paused	
-			if(myTimer3>c)
-			{
-				//We Start The Spawner At This Point, the NextSpawn Value is for The Time That The Spawner Activates
-				//I put The RandEnemy Array for Puting Random Enemies in a Box And Chosing From it
-				// WhereToSpawn is For Getting The X & Y Position, The Y of Our Game is just Changing by The CameraMovement so we don't Change That
-				//Also The PosX is a Value That Never Changes
-				//Instantiate Code is For Building an Object In Unity
-			if (Time.time > nextspawn) 
-			{
-				nextspawn = Time.time + spawnrate - dlytime;
-				randEnemy = Random.Range (0, 5);
-				whereToSpawn = new Vector2 (posX, transform.position.y);
-				Instantiate (enemies [randEnemy], whereToSpawn, gameObject.transform.rotation);		
-			}
-			}
-
-		}
-		//if The Game Is Paused We Make A Dly By Taking The timer To 0
-		else
-		{
-			myTimer3=0.0f;
-		}
+	void SpawnWindowWithNoEnemy( int i)
+	{
+		lastItem = (GameObject)Instantiate (noEnemyWindow [UnityEngine.Random.Range (0, noEnemyWindow.Length)],
+		                                    spawnPoints [i].transform.position, Quaternion.identity);
 		
 	}
-	
+
 }
