@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/Sequence 0.unity
   - enabled: 1
     path: Assets/Sequence 1.unity
+  - enabled: 1
+    path: Assets/Sequence 2.unity

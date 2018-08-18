@@ -24,4 +24,10 @@ public class MenuButtons : MonoBehaviour {
 	public void Mute(){
 		AudioListener.pause = !AudioListener.pause;
 	}
+	public void MoneySupport(){
+		Application.LoadLevel ("Sequence 2");
+	}
+	public void MoneyWeb(){
+		System.Diagnostics.Process.Start ("https://www.google.com");
+	}
 }
