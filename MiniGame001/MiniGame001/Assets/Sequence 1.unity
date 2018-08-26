@@ -540,9 +540,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -.890951037, y: -1.14940035}
+  m_Offset: {x: -.732662976, y: -1.06425047}
   serializedVersion: 2
-  m_Size: {x: 2.80017662, y: 3.11054516}
+  m_Size: {x: 3.56898761, y: 3.2808454}
 --- !u!114 &361017040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -711,9 +711,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: .0830128416, y: -.304379702}
+  m_Offset: {x: .128516033, y: -.267977148}
   serializedVersion: 2
-  m_Size: {x: .973544896, y: 1.16841674}
+  m_Size: {x: 1.21015835, y: 1.29582477}
 --- !u!114 &374843178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -734,7 +734,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 374843175}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 61eb38f8800b50c4ba806a9e7b24b0dd, type: 2}
   m_CullingMode: 0
@@ -768,7 +768,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 8
-  m_Sprite: {fileID: 21300000, guid: 56db5730b1f197b44a894a4c0f830ca5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6fd71cc1339ce634f88e291f083f6952, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &374843181
 Transform:
@@ -841,9 +841,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: .237533495, y: -.58985889}
+  m_Offset: {x: .184481815, y: -.403515607}
   serializedVersion: 2
-  m_Size: {x: 1.16872668, y: 1.44201767}
+  m_Size: {x: 1.83938408, y: 1.8147043}
 --- !u!95 &398514977
 Animator:
   serializedVersion: 3
@@ -1261,10 +1261,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1546861148}
   m_RootOrder: 1
-  m_AnchorMin: {x: .626749992, y: .565893292}
-  m_AnchorMax: {x: .626749992, y: .565893292}
-  m_AnchoredPosition: {x: -5.0999999, y: -4.19999981}
-  m_SizeDelta: {x: 98.9349976, y: 99.0719986}
+  m_AnchorMin: {x: .666750073, y: .58859551}
+  m_AnchorMax: {x: .666750073, y: .58859551}
+  m_AnchoredPosition: {x: -4, y: -3}
+  m_SizeDelta: {x: 164, y: 165}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &611422745
 MonoBehaviour:
@@ -1476,9 +1476,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: .255386144, y: -.296417207}
+  m_Offset: {x: .220597982, y: -.247293994}
   serializedVersion: 2
-  m_Size: {x: .588971674, y: .727681875}
+  m_Size: {x: .797702491, y: .95096761}
 --- !u!95 &720093310
 Animator:
   serializedVersion: 3
@@ -1564,10 +1564,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1546861148}
   m_RootOrder: 0
-  m_AnchorMin: {x: .515000045, y: .370404541}
-  m_AnchorMax: {x: .515000045, y: .371000022}
-  m_AnchoredPosition: {x: -1, y: -1.30000019}
-  m_SizeDelta: {x: 99, y: 98}
+  m_AnchorMin: {x: .504999995, y: .388809055}
+  m_AnchorMax: {x: .504999995, y: .388809055}
+  m_AnchoredPosition: {x: -4, y: -.5}
+  m_SizeDelta: {x: 158, y: 158}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &787885050
 MonoBehaviour:
@@ -2309,9 +2309,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c643884b58921304eb68d5251f5e9c33, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cbfdb41a70bfdf144ad8360928c5e7aa, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .119999997
+  m_Volume: .103
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2442,10 +2442,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1546861148}
   m_RootOrder: 2
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -107, y: 92}
-  m_SizeDelta: {x: 98.9339981, y: 97.8000031}
+  m_AnchorMin: {x: .330000013, y: .58859551}
+  m_AnchorMax: {x: .330000013, y: .58859551}
+  m_AnchoredPosition: {x: -4, y: -1}
+  m_SizeDelta: {x: 165, y: 163}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1185399765
 MonoBehaviour:
@@ -3003,9 +3003,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -.0767411217, y: -.673617184}
+  m_Offset: {x: -.0506970994, y: -.622283578}
   serializedVersion: 2
-  m_Size: {x: .805621207, y: 1.89276564}
+  m_Size: {x: 1.32651234, y: 1.99543142}
 --- !u!95 &1530385559
 Animator:
   serializedVersion: 3
@@ -3275,9 +3275,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: .0319002904, y: -.123048253}
+  m_Offset: {x: .0503461733, y: -.0738589987}
   serializedVersion: 2
-  m_Size: {x: .841397583, y: 1.04192042}
+  m_Size: {x: 1.00126386, y: 1.1402998}
 --- !u!114 &1603545384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3837,9 +3837,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: .0956510454, y: -.280751556}
+  m_Offset: {x: .0715599358, y: -.195900455}
   serializedVersion: 2
-  m_Size: {x: 1.20651591, y: 1.09389615}
+  m_Size: {x: 1.35106194, y: 1.46158564}
 --- !u!95 &1943641316
 Animator:
   serializedVersion: 3
@@ -3941,9 +3941,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -.0194022954, y: -.327579975}
+  m_Offset: {x: -.0397903509, y: -.263840139}
   serializedVersion: 2
-  m_Size: {x: 1.07433808, y: 1.41285157}
+  m_Size: {x: 1.33256578, y: 1.61681569}
 --- !u!114 &1988281750
 MonoBehaviour:
   m_ObjectHideFlags: 0
