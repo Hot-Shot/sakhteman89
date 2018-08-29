@@ -28,6 +28,6 @@ public class MenuButtons : MonoBehaviour {
 		Application.LoadLevel ("Sequence 2");
 	}
 	public void MoneyWeb(){
-		System.Diagnostics.Process.Start ("https://www.google.com");
+		Application.OpenURL ("https://www.google.com");
 	}
 }
