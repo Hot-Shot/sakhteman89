@@ -6,6 +6,10 @@ public class ScoringSystem : MonoBehaviour {
 	public Animator Death;
 	public static int score=0;
 	public Text scores = null;
+	public Text HighScore = null;
+	void Start(){
+		HighScore.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
+	}
 	public void OnMouseDown() {
 		if (PauseMenu.GameIsPaused||GameManager.gameHasEnded)
 			return;
@@ -14,5 +18,10 @@ public class ScoringSystem : MonoBehaviour {
 		scores.text =""+ score;
 		GetComponent<BoxCollider2D> ().enabled = false;
 		Destroy (gameObject, 15);
+		if (score > PlayerPrefs.GetInt ("HighScore", 0))
+		{
+			PlayerPrefs.SetInt ("HighScore", score);
+			HighScore.text = score.ToString();
+		}
 	}
 }
