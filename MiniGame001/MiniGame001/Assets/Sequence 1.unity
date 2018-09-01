@@ -626,7 +626,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: .112999998
+  m_Volume: .150000006
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -943,7 +943,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: .312999994
+  m_Volume: .150000006
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1134,7 +1134,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: .104000002
+  m_Volume: .150000006
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1845,7 +1845,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: .356999993
+  m_Volume: .150000006
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3519,7 +3519,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: .157000005
+  m_Volume: .150000006
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3759,6 +3759,7 @@ GameObject:
   - 114: {fileID: 1603545384}
   - 61: {fileID: 1603545383}
   - 50: {fileID: 1603545382}
+  - 82: {fileID: 1603545388}
   m_Layer: 0
   m_Name: InnocentAtBalcony
   m_TagString: Untagged
@@ -3806,6 +3807,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f8d71da07b33d489d2c5e597e1e4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pain: {fileID: 8300000, guid: b96ed352df9a3574f8f62e752f3e0d3d, type: 3}
+  Pain1: {fileID: 1603545388}
   H1: {fileID: 648067920}
   H2: {fileID: 336296628}
   H3: {fileID: 1333371319}
@@ -3866,6 +3869,76 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1620302123}
   m_RootOrder: 9
+--- !u!82 &1603545388
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1603545381}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: .150000006
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1620302122
 GameObject:
   m_ObjectHideFlags: 0
@@ -4305,6 +4378,7 @@ GameObject:
   - 61: {fileID: 1943641315}
   - 50: {fileID: 1943641314}
   - 114: {fileID: 1943641313}
+  - 82: {fileID: 1943641319}
   m_Layer: 0
   m_Name: InnocentAtWindow
   m_TagString: Untagged
@@ -4323,6 +4397,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f8d71da07b33d489d2c5e597e1e4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pain: {fileID: 8300000, guid: b96ed352df9a3574f8f62e752f3e0d3d, type: 3}
+  Pain1: {fileID: 1943641319}
   H1: {fileID: 648067920}
   H2: {fileID: 336296628}
   H3: {fileID: 1333371319}
@@ -4412,6 +4488,76 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1620302123}
   m_RootOrder: 5
+--- !u!82 &1943641319
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1943641312}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: .150000006
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1988281747
 GameObject:
   m_ObjectHideFlags: 0
@@ -4473,7 +4619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78ae1caa7616439409db680291f7d787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Punch: {fileID: 8300000, guid: 5129bd7ac31429e48a523f3c7447c2a3, type: 3}
+  Punch: {fileID: 8300000, guid: 89e42103b5308db4faf8f420b793c0e6, type: 3}
   Punch1: {fileID: 1988281754}
   Death: {fileID: 1988281751}
   scores: {fileID: 232780536}
@@ -4544,7 +4690,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: .0869999975
+  m_Volume: .150000006
   m_Pitch: 1
   Loop: 0
   Mute: 0

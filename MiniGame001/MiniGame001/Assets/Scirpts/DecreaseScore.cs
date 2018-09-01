@@ -3,11 +3,16 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class DecreaseScore : MonoBehaviour {
+	public AudioClip Pain;
+	public AudioSource Pain1;
 	public GameObject H1;
 	public GameObject H2;
 	public GameObject H3;
 	public Animator Death;
 	public Text Hit = null;
+	void Start(){
+		Pain1.clip = Pain;
+	}
 	void update(){
 		if (Lives.miss == 2) 
 		{
@@ -22,10 +27,8 @@ public class DecreaseScore : MonoBehaviour {
 		}
 	
 	}
-	void start(){
-	}
 	public void OnMouseDown(){
-
+		Pain1.Play ();
 		Death.SetBool ("Active", true);
 		Lives.miss -= 1;
 		Hit.text = "Lives: " + "" + Lives.miss;
